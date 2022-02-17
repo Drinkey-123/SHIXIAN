@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<title>JS/jQuery图片查看器viewer.js演示-回调函数_dowebok</title>
+<link rel="stylesheet" href="css/viewer.min.css">
+<style>
+
+</style>
+</head>
+
+<body>
+
+<ul id="dowebok">
+	<li><img data-original="img/tibet-1.jpg" src="img/thumbnails/tibet-1.jpg" alt="图片1"></li>
+</ul>
+
+<script src="js/viewer.min.js"></script>
+<script>
+var viewer = new Viewer(document.getElementById('dowebok'), {
+	url: 'data-original',
+
+
+});
+</script>
+
+
+
+</body>
+</html>

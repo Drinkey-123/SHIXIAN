@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no ">
+    <title>final1hao</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="final1.css">
+</head>
+<style>
+    a{text-decoration: none;}
+</style>
+<body>
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+    
+        <a href="#" class="logo"><span>云游</span>蜀道</a>
+    
+       <nav class="navbar">
+            <a href="#">首页</a>
+            <a href="#">地图游览</a>
+            <a href="#">非遗介绍</a>
+            <a href="#">购物商城</a>
+            <a href="#">留言板</a>
+        </nav>
+      
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+    
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    
+    </header>
+    <div class="bzsy">
+        <h1 class="row skew-title">  
+          <span>巴</span><span>山</span><span class="last">背</span>
+            
+          <span>二</span><span class="last">歌</span>
+        </h1>
+      </div>
+      <script type="text/javascript">
+      (function() {
+        // We must use JS as we need to select previous
+        // elements which can't be done with CSS.
+        $('.skew-title').children('span').hover((function() {
+          var $el, n;
+          $el = $(this);
+          n = $el.index() + 1;
+          $el.addClass('flat');
+          if (n % 2 === 0) {
+            return $el.prev().addClass('flat');
+          } else {
+            if (!$el.hasClass('last')) {
+              return $el.next().addClass('flat');
+            }
+          }
+        }), function() {
+          return $('.flat').removeClass('flat');
+        });
+      
+      }).call(this);
+      </script>
+      <ul id="dowebok" style="flex-direction: row;">
+        <li><img data-original="img/tibet-1.jpg" src="img/thumbnails/tibet-1.jpg" alt="图片1"></li>
+        <li><img data-original="img/tibet-2.jpg" src="img/thumbnails/tibet-2.jpg" alt="图片2"></li>
+        <li><img data-original="img/tibet-3.jpg" src="img/thumbnails/tibet-3.jpg" alt="图片3"></li>
+        <li><img data-original="img/tibet-4.jpg" src="img/thumbnails/tibet-4.jpg" alt="图片3"></li>
+    <script src="js/viewer.min.js"></script>
+    <script>
+    var viewer = new Viewer(document.getElementById('dowebok'), {
+        url: 'data-original'
+    });
+    </script>
+    <link rel="stylesheet" href="css/viewer.min.css">
+<ul id="dowebok">
+	<li><img data-original="img/tibet-1.jpg" src="img/thumbnails/tibet-1.jpg" alt="图片1"></li>
+</ul>
+
+<script src="js/viewer.min.js"></script>
+<script>
+var viewer = new Viewer(document.getElementById('dowebok'), {
+	url: 'data-original',
+
+
+});
+</script>
+<div class="fengex">
+    <span style="white-space:pre"></span><span class="line"></span>
+</div>
+<div class="CO1" style="background-color: #D09F74;">
+    <div class="bzsy">
+        <h1 class="row skew-title">  
+          <span>蚌</span><span>鹤</span><span class="last">舞</span>
+        </h1>
+      </div>
+    <section class="banghewuda" id="banghewuda">
+        <div class="banghewu">
+            <div class="banghe">
+                <div class="bangh">
+                    <img src="photo/banghe/banghe2.webp" alt="">
+                </div>
+                <div class="bang">
+                    <div>
+                        <h2>项目介绍</h2>
+                        <br />
+                        <p>蚌鹤舞意在告诉人们，不要为了蝇头小利而发生争执，要和睦相处。蚌鹤舞演员主要三人，
+                            即蚌壳仙子(由女性饰演)、白鹤童子、渔翁，为了烘托气氛也可以增加蚌壳的数量。表演
+                            者在锣鼓的伴奏下开始，演员首先以道白和演唱形式唱述“鹤蚌相争，渔翁得利”的寓言故事，
+                            然后蚌壳和白鹤以小碾步由舞台两边入场，最后是渔翁登场。为增强其艺术效果，在表演过
+                            程中还不时穿插有烟火师的喷烟火表演，打烟火的动作变化多样，如有滚龙缠腰、天女散花等。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="banghe">
+                <div class="bangh">
+                    <img src="photo/banghe/banghe3.jpg" alt="">
+                </div>
+                <div class="bang">
+                    <div>
+                        <h2>项目起源</h2>
+                        <br />
+                        <p>蚌鹤舞源于金辽时期的湖北，作为川东北地区进川的重要水路码头万源大竹，旧时这里曾建有六省会馆，
+                            商贸异常繁荣，每天都有百余只商船来往于川陕等地，并可直达武汉。湖广填川时
+                            这里自然成了移民首选的居住地。民国十五年湖北艺人宋明亮、何生端来到大竹河定居
+                            后，当他们看到当地文化生活贫乏时，便在大竹镇根据“鹤蚌相争，渔翁得利”的寓言故
+                            事加以编排进行蚌鹤舞表演。短短百年间，蚌鹤舞风趣幽默、生动而具有寓意的表演深
+                            得人们喜爱。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="banghe">
+                <div class="bangh">
+                    <img src="photo/banghe/banghe1.jpg" alt="">
+                </div>
+                <div class="bang">
+                    <div>
+                        <h2>项目特点</h2>
+                        <br />
+                        <p>蚌鹤舞是由一些蚌，一个鹤，一个渔翁组合而成，表演的内容则来源于一个传说故事“蚌鹤相争，渔翁得利”。
+                            鹤与蚌相互争斗，演员走八字步，而渔翁则向鹤和蚌挑逗，渔翁在挑逗的过程中，还边
+                            逗边唱。其中还有烟火师打烟火增强其艺术效果。该舞把“蚌鹤相争、渔翁得利”的传说故
+                            事用拟物的方法进行舞蹈表演，舞蹈步伐多以四方步为主，演、唱结合，并以唢呐和锣鼓
+                            为音乐伴奏，从而呈现出更好的表演效果。</p>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </section>
+</div>
+    <div class="fengex">
+        <span style="white-space:pre"></span><span class="line"></span>
+    </div>  
+    <div class="CO2" style="background-color: #8F4B28;">   
+    <div class="bzsy">
+        <h1 class="row skew-title">  
+          <span>大</span><span>竹</span><span class="last">竹</span>
+            
+          <span>唢</span><span class="last">呐</span>
+        </h1>
+      </div>
+    <section class="zhusuona" id="zhusuona">
+        <div class="zhusuo">
+            <div class="zhus">
+                <div class="zhu">
+                    <img src="photo/zhusuona/s1.jpg" alt="">
+                </div>
+                <div class="suo">
+                    <div>
+                        <h2>项目介绍</h2>
+                        <br />
+                        <p>大竹竹唢呐是产生并流传于四川省达州市大竹境内的传统民间音乐，它包括乐器
+                            的制作工艺和乐器的演奏技艺。四川省达州市大竹县产竹，有“川东绿竹之乡”之美誉。
+                            作为川东大竹县独有的竹唢呐，以其清新、动听的音韵载入四川省非物质文化遗产名录。
+                            数百年前，唢呐传入巴蜀，大竹人就地取材，用本地的竹子制作了唢呐。经过发展，
+                            竹唢呐制作工艺日臻精熟。竹唢呐由哨、天心、杆子和喇叭4部分构成。哨由大竹县当
+                            地燕麦秆做成，杆子采用大竹县特产的罗汉竹制作，喇叭则由当地产的黄竹篾丝编织成
+                            形后，再刮灰涂上土漆，套于杆下端，可活动和装卸；如今的大竹竹唢呐为6孔，五音阶
+                            定音，其演奏形式多种多样、音韵传神，堪称传统民俗瑰宝。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="zhus">
+                <div class="zhu">
+                    <img src="photo/zhusuona/s2.jpg" alt="">
+                </div>
+                <div class="suo">
+                    <div>
+                        <h2>项目起源</h2>
+                        <br />
+                        <p>“大竹竹唢呐”系四川达州大竹民间艺人，利用当地特有的罗汉竹纯手工制作的乐器，它不仅
+                            制作上与其它唢呐不同，而且音色也独具特色。在宋代时候的大竹县，大竹人的娱乐除唱山歌外，
+                            基本上没有别的活动形式。恰在这时，唢呐乐器传入巴蜀之地，大竹人便因好奇而跃跃欲试，可由于
+                            一般唢呐比较昂贵，聪明的大竹人便凭借多竹的优势就地取材，仿照木制唢呐形状，用竹子制作。最初，
+                            人们在给竹管确定孔距时，完全凭着感觉，有的甚至以自己五根手指关节的长短在竹管上比划而定。所以，
+                            竹唢呐产生之初，发音是不准确的。后来，经过人们漫长的制作和吹奏实践摸索，也就能够准确地定位孔
+                            与孔之间的距离；同时，吹奏技巧也渐渐达到娴熟的程度。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="zhus">
+                <div class="zhu">
+                    <img src="photo/zhusuona/s3.jpg" alt="">
+                </div>
+                <div class="suo">
+                    <div>
+                        <h2>项目特点</h2>
+                        <br />
+                        <p>在吹奏上，“大竹竹唢呐”独具特色:齐奏、独奏、重奏、轮奏，表现形式多样，祖宗秘传的隐性换气法、娴熟多变的指法，
+                            加之气息、嘴劲的控制，使演奏生动传神。更奇特的是，还有竹唢呐吹奏高手，一人可表演同时口吹四支唢呐、鼻吹两支
+                            唢呐，口鼻同时吹四支唢呐的特技，有如高难度的民间杂技一般，具有极高的艺术价值。还有就是用'麦草'制成的'叫口'，无疑加大了吹奏者的难
+                            度，必须在唇、舌、气的细小技法上进行苦练，实非一日之功而修成。竹唢呐的音色之美，表现在连音的缠绕、吐音的欢快、
+                            舌尖的巧用等，散发出萧音、滑音、颤音、叠音、垫音、人声、鸟鸣等。竹唢呐的音韵极为传神，精湛的演技别具风格，堪称
+                            民俗瑰宝。</p>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </section> 
+    </div>
+    <div class="fengex">
+        <span style="white-space:pre"></span><span class="line"></span>
+    </div>
+    <div class="qianco" style="background-color: #624645;">
+    <div class="bzsy">
+        <h1 class="row skew-title">  
+          <span>钱</span><span>棍</span><span class="last">舞</span>       
+        </h1>
+      </div>
+    <section class="showimae" id="showimae">
+        <div class="showima">
+            <div class="box">
+                <div class="img-box1">
+                    <img src="photo/qiangun/12.jpeg" alt="">
+                </div> 
+                <div class="img-box2">
+                    <img src="photo/qiangun/a12.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="showima">
+            <div class="box">
+                <div class="img-box1">
+                    <img src="photo/qiangun/13.jpg" alt="">
+                </div> 
+                <div class="img-box2">
+                    <img src="photo/qiangun/a13.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="showima">
+            <div class="box">
+                <div class="img-box1">
+                    <img src="photo/qiangun/14.webp" alt="">
+                </div> 
+                <div class="img-box2">
+                    <img src="photo/qiangun/a14.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+</div>
+    <section class="2hao" id="2hao" style="background-color:#624645;">
+    <div class="jies">
+        <div class="jies1"></div>
+        <div class="content">
+            <h2>项目简介</h2>
+            <br/>
+            <p>钱棍舞是在中国一带流传已有近千年历史的传统舞蹈艺术，其中钱棍是一种具有
+                浓郁地方特色的舞蹈道具。钱棍的一般做法是由一根竹棍两端嵌上几枚铜钱，再
+                缀以流苏，竹棍一般长约三尺，无严格要求。钱棍舞在一些重要的日子里表达庆祝，人们随着音乐的节拍用钱棍敲击自己的全身关节，使得
+                铜钱发出金玉之响，铿锵有力。表演的人越多，场面也就越壮观。钱棍舞跳起来
+            有利于灵活性和协调性的提高，是一项非常适合中老年人的健身运动。</p>
+        </div>
+        <img src="photo/qiangun/夏日素材 (5).png">
+    </div>
+    <div class="jies">
+        <div class="jies1"></div>
+        <div class="content">
+            <h2>项目起源</h2>
+            <br/>
+            <p>相传在乾隆年间，湖北襄州有一巨富名叫曹卓，在当地有权有势，曾在其大门上挂有大量铜钱，
+                认为铜钱上有皇帝的年号，皇帝就是真命天子，风吹动发出的响声能够辟邪和保佑平安。川、
+                陕、鄂等地人们在日常生活和劳作中也普遍将铜钱作为饰物，如烘帽、烟杆、挑夫的垫肩等物
+                品多缀有铜钱。起初人们将木棍两头吊上铜钱，闲暇时打出响声，用以消除疲劳、强身健体和
+                自娱自乐。后用竹竿代替木棍，并在竹竿上打洞，开槽，再配上音乐、曲调、歌词编排出多种打法，
+                件件发展成为当地群众逢年过节，喜庆日子必不可少的娱乐舞蹈。</p>
+        </div>
+        <img src="photo/qiangun/夏日素材 (2).png">
+    </div>
+    <div class="jies">
+        <div class="jies1"></div>
+        <div class="content">
+            <h2>项目特点</h2>
+            <br/>
+            <p>钱棍舞是在领唱和乐器的带领下众人手拿钱棍共同参与的一种民俗舞蹈。其技术要领包括步调一致，
+                整齐化一；跳跃结合，击打准确；曲舞相融，动作舒展等方面。击打的部位包括头部、肩部、臂部、
+                腰部、双胯、脚掌脚背以及脚跟；种类按打击部位的次数分八下、十下、十二下、十六下、十九下、
+                三十二下；动作名称包括雪花盖顶、黄龙缠腰、黄莺展翅、苦竹盘根等。演出队伍前面还要求有一名经
+                验丰富的队长，手执红绿旗进行指挥和调度。</p>
+        </div>
+        <img src="photo/qiangun/夏日素材 (18).png">
+    </div>
+    </section>
+    <div class="fengex">
+        <span style="white-space:pre"></span><span class="line"></span>
+    </div>
+    <div class="CO3" style="background-color: #bc6236;height: 60px;"> 
+    <div class="bzsy">
+        <h1 class="row skew-title">  
+          <span>巴</span><span>山</span><span class="last">剪</span>
+            
+         <span class="last">纸</span>
+        </h1>
+      </div>
+    </div>
+    <section class="jian" id="jian">
+        <div class="jianzhi">
+            <div class="jianz">
+                <div class="jzp1">
+                    <img src="photo/jianzhi/j1.jpg" alt="">
+                </div> 
+                <div class="jzp2">
+                    <img src="photo/jianzhi/j2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="jianzhi">
+            <div class="jianz">
+                <div class="jzp1">
+                    <img src="photo/jianzhi/j8.jpg" alt="">
+                </div> 
+                <div class="jzp2">
+                    <img src="photo/jianzhi/j9.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="jianzhi">
+            <div class="jianz">
+                <div class="jzp1">
+                    <img src="photo/jianzhi/j5.jpg" alt="">
+                </div> 
+                <div class="jzp2">
+                    <img src="photo/jianzhi/j7.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="txtjianzhi" id="txtjianzhi" style="background-color: #bc6236;">
+    <div class="txtjianz"">
+        <div class="txtjian"></div>
+        <div class="txtji">
+            <h2>项目简介</h2>
+            <br/>
+            <p>巴山剪纸是指位于四川巴山地区的一种剪纸艺术，是川北历史悠久的群众性传统民间艺术活
+                动之一，属于四川剪纸中的一支流派。 通江民间文化种类繁多、底蕴深厚，是巴蜀文化的重
+                要组成部分，在这众多的艺术种类中，剪纸是其中最为璀璨的花朵之一，李亚雪、李怀玉剪纸
+                则是巴山剪纸技艺的杰出代表。巴山剪纸是川北历史悠久的群众性传统民间艺术活动之一，它
+                的作者大都是劳动妇女，受其地形地貌和传统巴文化的影响，其剪纸艺术作品倾向于圆润、饱
+                满，有突出的艺术特色和杰出的艺术价值。</p>
+        </div>
+        <img src="photo/qiangun/夏日素材 (5).png">
+    </div>
+    <div class="txtjianz">
+        <div class="txtjian"></div>
+        <div class="txtji">
+            <h2>项目起源</h2>
+            <br/>
+            <p>剪纸是中国民间的传统艺术，有着悠久的历史。剪纸用的材料和工具很简单，只需纸和剪刀。
+                办婚礼、过春节的时候，红颜色的剪纸是门窗装饰的首选。民间剪纸的题材非常丰富，体裁
+                样式相对稳定，某些花纹还较为可信地保持着初始的基本形态。由于直至物品的保存极为困难，
+                使我们很难看到从古代流传下来的剪纸实物。贴在窗户上的剪纸，人们称其为“窗花”。令人惊
+                奇的是，窗花几乎都是在冬天贴上去的。冬天是少花的季节。在无花的日子里，窗花却在窗格
+                上或调皮喧闹，或平和优雅地绽放着。</p>
+        </div>
+        <img src="photo/qiangun/夏日素材 (2).png">
+    </div>
+    <div class="txtjianz">
+        <div class="txtjian"></div>
+        <div class="txtji">
+            <h2>项目特点</h2>
+            <br/>
+            <p>巴山剪纸的主要特点有:将传统剪纸技法与绘画、染色及套色、单色相结合。巴山剪纸是指通江县
+                民间剪纸艺术家李亚雪、李怀玉的剪纸技艺。主要风格三种:一是造型古老，剪法粗放，内容上沿
+                袭了原始图腾的纹饰图样;二是工整对称，线条细腻流畅的历史传统和生活装饰图案;三是形式上融
+                入了西方美术绘画特征元素的图样。</p>
+        </div>
+        <img src="photo/qiangun/夏日素材 (18).png">
+    </div>
+    </section>
+   
+    <div class="fengex">
+        <span style="white-space:pre"></span><span class="line"></span>
+    </div> 
+    <div class="CO4" style="background-color: #efb964; height: 30px;"> 
+    <div class="bzsy">
+        <h1 class="row skew-title">  
+          <span>薅</span><span class="last">草</span>
+            
+          <span>锣</span><span class="last">鼓</span>
+        </h1>
+      </div>
+    </div>
+    <section class="review" id="review" style="background-color: #efb964;">
+        <div class="luogu">
+                <div class="luo">
+                    <img src="photo/luoguwu/lu1.jpg" alt="">
+                    <h3>项目简介</h3>
+                    <p style="line-height: 1.4em;">薅草锣鼓又名“打闹歌”，俗称“打闹”，是一种流行于土家族聚居区的民间歌曲形式。
+                        土家人在薅草季节聚集数十乃至数百人集体劳动，此时往往请两名歌手面对薅草众
+                        人进行表演，一个击鼓，一个敲锣，随着锣鼓声边唱边舞，薅草众人则从旁和唱。
+                        其歌词多为一韵到底，内容则分为“歌头”（俗称“引子”）、“请神”、“扬歌”、“送
+                        神”等部分。舞时双手随脚步摆动，左手随左脚，右手随右脚，轻快活泼，柔中带刚。
+                        薅草锣鼓曲牌灵活多样，歌师能根据演唱时的时序和天色早晚变换唱词，以活跃气氛，
+                        使单调辛劳的农事劳作转为火热欢快的集体活动。</p>
+                </div>
+            </div>
+            <div class="luogu">
+                <div class="luo">
+                    <img src="photo/luoguwu/lu3.jpg" alt="">
+                    <h3>项目起源</h3>
+                    <p style="line-height: 1.4em;"> “薅草锣鼓”是一种独特的民族民歌艺术形式。据传起源于3000多年前的巴人时期，那时的
+                        人们从渔猎转为农耕，为驱赶野兽、祭祀山神而击鼓鸣锣吆喝，后演变成一种劳动山歌。
+                        明代《三才会图》一书中记载：“薅田有锣鼓，其声促烈清壮，有缓急抑扬。”民国年间
+                        《宣汉县志》记载：“土民自古有‘薅草锣鼓’之习。夏日耘草，数家趋一家，彼此轮转，
+                        以次周而耘之，往往集数十人，其中二人击鼓鸣钲，迭应相和，耘者劳而忘疲，其功较倍。”</p>
+                </div>
+            </div>
+            <div class="luogu">
+                <div class="luo" >
+                    <img src="photo/luoguwu/lu2.jpg" alt="">
+                    <h3>项目特点</h3>
+                    <p>薅草锣鼓融山歌、民歌和地方戏曲为一体，其音域宽广、浑厚、高亢，加上巨大的锣鼓声，震撼山谷，
+                        气势磅礴。 “薅草锣鼓”韵味悠长，其打唱者称“歌牌子”或“歌头”，边打边唱，现编现唱，堪称能人，
+                        其打击乐有鼓、钲、钹、马锣等。“歌牌子”或“歌头”领唱，众接腔合唱，配以锣鼓伴奏。鼓声时轻时重，阴阳有致。
+                        锣鼓声热烈响亮，领唱者慷慨激昂，劳动群众的和声波澜起伏，在山谷里久久回荡，原生态韵味悠长。 
+                        薅草锣鼓的唱词为五字句、七字句、十字句，一般是单句虚词拖腔，复句押韵，且一韵到底。”
+                        薅草锣鼓从形式上有“单锣鼓”（2至3人）和“夹锣鼓”（5至9人）。薅草锣鼓唱词内容生动活泼，其均属口头创作，见好夸好，以物及人。
+                        除即兴之外，也有唱秦香莲的，骂陈世美的，说岳飞的，斥秦桧的,所唱内容十分广泛。</p>
+                </div>
+            </div>
+    </section>  
+    <div class="fengex">
+        <span style="white-space:pre"></span><span class="line"></span>
+    </div>
+    <div class="CO5" style="background-color: #e8c597; height: 30px;"> 
+    <div class="bzsy">
+        <h1 class="row skew-title">  
+          <span>通</span><span class="last">江</span>
+            
+          <span>石</span><span class="last">雕</span>
+        </h1>
+      </div>
+    </div>
+    <section class="tongjiangshidiao" id="tongjiangshidiao"  style="background-color:#e8c597;">
+        <div class="tjsd">
+                <div class="tongjiang">
+                    <img src="photo/shidiao/s2.jpg" alt="">
+                    <h3>项目简介</h3>
+                    <p style="line-height: 1.4em;">通江石雕是指通江县民胜镇民间雕刻大师的传统石雕技艺。
+                        通江石雕从用料上可分为花岗石雕、大理石雕、白绵石雕、青绵石雕、汉白玉石雕等。
+                        从题材上看可分为3大类:吉祥图案石雕；戏剧人物、古代英雄、神话传说和日常生活题材石雕；
+                        辟邪纳福的吉祥物与祥瑞动物。其雕刻从选料、开山、取石到雕刻、着色、成像，每一个步骤都有既定的歌谣和仪式。
+                        雕刻没有图纸蓝本，都是师傅口传。取料后在石料上画出大致轮廓，然后按心中形象进行雕刻，成像后据物像的特点着色。
+                        通江石雕集民间绘画、雕塑、工艺、建造、宗教、民俗等多种元素于一体，口传的传承方式使通江石雕突破了形体外在轮廓的限制和二维空间的限制，
+                        表现手法为多视点、多层次。</p>
+                </div>
+            </div>
+            <div class="tjsd">
+                <div class="tongjiang">
+                    <img src="photo/shidiao/s4.jpg" alt="">
+                    <h3>项目起源</h3>
+                    <p style="line-height: 1.4em;"> 通江石雕有着悠远的历史和深厚的民间基础。据《通江县志》记载：通江古属巴国，秦属巴郡，
+                        西汉称宕渠，西魏置县，唐宋称壁州。据《蜀中名胜记》载：“壁州神庙石刻，在今通江县北有元光三年制书”。
+                        境内石雕鼎盛于唐，今位于通江县城西门的国家级文保单位——千佛崖摩崖造像，
+                        被誉为“国之瑰宝”。这些雕塑者均来自民间，其雕刻技艺在民间以师承方式代代传承和
+                        发展。曾玉平师承庄园匠屈文礼，由此能上溯到清末的赵廉金。</p>
+                </div>
+            </div>
+            <div class="tjsd">
+                <div class="tongjiang" >
+                    <img src="photo/shidiao/s5.jpg" alt="">
+                    <h3>项目特点</h3>
+                    <p>从流派上看，通江石雕应属于中国几大流派之一的四川广元白花石雕的分支。
+                        其雕刻每一个步骤都有既定的歌谣和仪式，特别是对佛像、神像的雕刻、着色、
+                        装脏、开光、点像、迎神、安位等更有秘而不宣的独特的诀术歌谣和仪式。
+                        其作品众多，如德阳东佛山公园的“滚龙抱柱”、“日出东山汉白玉环艺雕塑”，眉山三苏祠的“三苏像”，北京颐和园的拱形圆门图案、
+                        小桥流水图案、皇家院落和庄园图案的浮雕，台湾大批量的石砚等。通江石雕集民间绘画、雕塑、工艺、建造、宗教、民俗等多种元素于一体。
+                        其风格真诚、淳朴；色彩对比强烈，造型大胆、夸张、变形且饱满、匀称；形式与内容结合紧密，追求形似和神似的统一；
+                        不少主题与祖先崇拜、图腾崇拜、鬼神崇拜等原始文化密不可分；口传心授的传承方式使通江石雕突破了形体外在轮廓的限制和二维空间的限制，
+                        表现手法为多视点、多层次。具有极高的历史研究价值、艺术价值和经济价值。</p>
+                </div>
+            </div>
+    </section>  
+    <div class="fengex">
+        <span style="white-space:pre"></span><span class="line"></span>
+    </div>
+    <div class="CO6" style="background-color: #e9e2cf; height: 30px;"> 
+    <div class="bzsy">
+        <h1 class="row skew-title">  
+          <span>非</span><span class="last">遗</span>
+            
+          <span>美</span><span class="last">食</span>
+        </h1>
+      </div>
+    </div>
+     <!-- 轮播图主体 -->
+     <section class="fod" id="fod" style="background-color: #e9e2cf;">
+     <div class="swipe" id="swipe">
+        <!-- 模糊背景 -->
+        <div class="bg" id="swipe_bg"></div>
+        <!-- 图片区域 -->
+        <section>
+            <!-- 图片显示 -->
+            <div class="img-box" id="swipe_img_box">
+                <a href="#" class="link" id="swipe_link">
+                    <img src="photo/yiner/y1.jpg alt="" class="img" id="swipe_img">
+                </a>
+            </div>
+            <!-- 指示点 -->
+            <div class="select" id="swipe_select">
+                <!-- <a href="#" class="item checked"></a>
+                <a href="#" class="item"></a>
+                <a href="#" class="item"></a> -->
+            </div>
+            <!-- 左侧翻页按钮 -->
+            <div class="btn left" id="swipe_btn_left">
+                <!-- 字体图标：左箭头 -->
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </div>
+            <!-- 右侧翻页按钮 -->
+            <div class="btn right" id="swipe_btn_right">
+                <!-- 字体图标：右箭头 -->
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </div>
+        </section>
+    </div>
+    <script>
+        // 当前轮播图编号
+        let current_index=-1;
+        // 自动轮播定时器
+        let swipe_timer=null;
+        // 轮播图的图片地址与跳转链接
+        let links=[
+            {'image':'photo/yiner/y1.jpg','target':'#1'},
+            {'image':'photo/yiner/y2.jpg','target':'#2'},
+            {'image':'photo/yiner/y3.jpg','target':'#3'},
+            {'image':'photo/jiuzao/z1.jpg','target':'#4'},
+            {'image':'photo/jiuzao/z2.jpg','target':'#5'},
+            {'image':'photo/jiuzao/z3.jpg','target':'#6'}
+        ];
+
+        // 需要操作到的元素
+        let swipe=document.getElementById('swipe');
+        let swipe_bg=document.getElementById('swipe_bg');
+        let swipe_img_box=document.getElementById('swipe_img_box');
+        let swipe_link=document.getElementById('swipe_link');
+        let swipe_img=document.getElementById('swipe_img');
+        let swipe_select=document.getElementById('swipe_select');
+        let swipe_btn_left=document.getElementById('swipe_btn_left');
+        let swipe_btn_right=document.getElementById('swipe_btn_right');
+
+        // 事件
+        // 切换图片
+        let select=(index)=>{
+            // 停止播放
+            stop();
+            // 转数字
+            index=Number(index);
+            // 越界超过最大数量,直接返回
+            if(index>=links.length){
+                return;
+            }
+            // 选中当前已选中的,直接返回
+            if(current_index==index){
+                return;
+            }
+            // 取消当前指示点的选中状态
+            if(current_index>-1){
+                swipe_select.children[current_index].classList.remove('checked');
+            }
+            // 变更当前轮播图的编号
+            current_index=index;
+            // 找到当前元素
+            let current_link=links[current_index];
+            // 背景变化
+            swipe_bg.style.backgroundImage='url('+current_link.image+')';
+            // 前景变化
+            swipe_img.setAttribute('src',current_link.image);
+            // 链接变化
+            swipe_link.setAttribute('href',current_link.target);
+            // 增加新的指示点的选中状态
+            swipe_select.children[current_index].classList.add('checked');
+        };
+        // 自动切换图片
+        let autoSelect=(index)=>{
+            // 转数字
+            index=Number(index);
+            // 越界超过最大数量，直接返回
+            if(index>=links.length){
+                return;
+            }
+            // 选中当前已选中的，直接返回
+            if(current_index==index){
+                return;
+            }
+            // 取消当前指示点的选中状态
+            swipe_select.children[current_index].classList.remove('checked');
+            // 变更当前轮播图的编号
+            current_index=index;
+            // 找到当前元素
+            let current_link=links[current_index];
+            // 前景图片
+            // 第一步调整过渡时间
+            swipe_img.style.transition='opacity 0.5s ease-in 0s';
+            // 第二步调整不透明度为0.2
+            swipe_img.style.opacity=0.2;
+            // 第三步延迟变换img图片，并重新定义透明度以及过渡时间和过渡方式
+            setTimeout(() => {
+                // 背景变化
+                swipe_bg.style.backgroundImage='url('+current_link.image+')';
+                // 前景变化
+                swipe_img.setAttribute('src',current_link.image);
+                // 链接变化
+                swipe_link.setAttribute('href',current_link.target);
+                // 不透明度变化
+                swipe_img.style.transition='opacity 0.7s ease-out 0s';
+                swipe_img.style.opacity=1;
+                // 增加新的指示点选中状态
+                // 如果已经通过手动点击了，选中则此处不再执行
+                if(!document.querySelector('.swipe .checked')){
+                    swipe_select.children[current_index].style.transition='background-color 0.5s';
+                    swipe_select.children[current_index].classList.add('checked');
+                }
+            }, 500);
+        };
+        // 播放
+        let play=()=>{
+            // 3秒切换一次
+            swipe_timer=setInterval(()=>{
+                // 设置新的index
+                let index=current_index+1;
+                // 右翻越界，切到第一张
+                if(index>=links.length){
+                    index=0;
+                }
+                // 加载新图片（这里选择自动，增加切换效果）
+                autoSelect(index);
+            },3000);
+        };
+        // 停止
+        let stop=()=>{
+            if(swipe_timer){
+                clearInterval(swipe_timer);
+                swipe_timer=null;
+            }
+        };
+        // 初始化
+        let init=()=>{
+            for(let i=0;i<links.length;i++){
+                // 创建a元素
+                let item=document.createElement('a');
+                // 修改属性
+                item.setAttribute('class','item');
+                item.setAttribute('href','#');
+                item.setAttribute('data-index',i);
+                // 追加元素
+                swipe_select.appendChild(item);
+            }
+            // 默认第一张
+            select(0);
+            // 绑定各个事件并开始轮播
+            bind();
+            play();
+        };
+        // 绑定
+        let bind=()=>{
+            // 左翻事件监听
+            swipe_btn_left.addEventListener('click',()=>{
+                // 设置新的index
+                let index=current_index-1;
+                // 左翻越界，切到最后一张
+                if(index<0){
+                    index=links.length-1;
+                }
+                // 加载新图片
+                select(index);
+            });
+            // 右翻事件监听
+            swipe_btn_right.addEventListener('click',()=>{
+                // 设置新的index
+                let index=current_index+1;
+                // 右翻越界，切到第一张
+                if(index>=links.length){
+                    index=0;
+                }
+                // 加载新图片
+                select(index);
+            });
+            // 循环绑定指示器点击事件
+            for(const key in swipe_select.children){
+                if(swipe_select.children.hasOwnProperty(key)){
+                    const element=swipe_select.children[key];
+                    element.addEventListener('click',(e)=>{
+                        // 取消默认点击跳转
+                        e.preventDefault();
+                        // 跳转到当前指示点中data-index所指定的图片
+                        select(e.target.dataset.index);
+                    });
+                }
+            }
+            // 绑定鼠标移入事件
+            swipe.addEventListener('mouseover',(e)=>{
+                // 防止鼠标从子元素移出时触发
+                if(e.relatedTarget&&swipe.compareDocumentPosition(e.relatedTarget)==10){
+                    stop();
+                }
+            });
+            // 绑定鼠标移出事件
+            swipe.addEventListener('mouseout',(e)=>{
+                // 防止鼠标从子元素移出时触发
+                if(e.relatedTarget&&swipe.compareDocumentPosition(e.relatedTarget)==10){
+                    play();
+                }
+            });
+            // 绑定鼠标移动事件
+            swipe.addEventListener('mousemove',(e)=>{
+                stop();
+            });
+        };
+
+        // 页面加载完毕，执行初始化
+        window.addEventListener('load',()=>{
+            init();
+        })
+    </script> 
+     </section>  
+</body>
+</html>

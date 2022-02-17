@@ -1,0 +1,846 @@
+* {
+    /* 初始化 */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 700vh;
+    background: #E1CEBD;
+    align-items:center;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    transform-style:preserve-3d;
+}
+.fengex{
+    display: flex;
+        align-items: center;
+        padding-top: 30px;
+        font-size: 0.8rem;
+        color: rgb(66, 66, 66);
+}
+.fengex::before,
+.fengex::after {
+    content: '';
+    flex: 2;
+    height: 1px;
+    width: 100%;
+    background: rgb(66, 66, 66);
+}
+
+.fengex::before {
+    margin-right: 0rem;
+}
+
+.fengex::after {
+    margin-left: 0rem;
+}
+.showima{
+    position: relative;
+    padding-top: 12vh;
+    width: 470px;
+    height: 430px;
+    margin: 60px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+.showima .box{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 93%;
+    height: 93%;
+    transform-style: preserve-3d;
+    transition: 1s  ease;
+}
+.showima .box .img-box1{
+    position:absolute;
+    top: 0;
+    left:30%;
+    width: 100%;
+    height: 100%;
+}
+.showima .box .img-box1 img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.showima .box .img-box2{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+.showima .box .img-box2 img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    transform:translateZ(100px);
+}
+.showima:hover .box{
+    transform: rotateY(180deg);
+}
+.jies{
+    display:flex;
+    flex-direction: row;
+}
+.jies{
+    position: relative;
+    padding-top: 20px;
+    width: 700px;
+    height: 420px;
+    background:rgb(199, 158, 120);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5s;
+    margin:2px 4px 50px 5px;
+}
+.jies .jies1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.jies .jies1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(231, 221, 222);
+    clip-path: circle(100px at center);
+    transition: 0.5s;
+}
+.jies:hover .jies1:before{
+    background: rgb(228, 216, 200);
+    clip-path: circle(500px at center);
+}
+.jies img{
+    position: absolute;
+    top: 70%;
+    left: 53%;
+    transform: translate(-50%,-50%);
+    height: 800px;
+    pointer-events: none;
+    transition: 0.8s;
+}
+.jies:hover img{
+    left: 86%;
+    top: 75%;
+    height: 900px;
+}
+.jies .content{
+    position:relative;
+    width: 74%;
+    padding: 2px 20px 10px;
+    transition: 1.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.jies:hover .content{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.jies .content h2{
+    text-transform: uppercase;
+    font-size: 1.7em;
+}
+.jies .content p{
+    font-size: 1.4em;
+    line-height: 1.2em;
+}
+
+.review .luogu{
+    padding: 40px 30px 30px;
+    text-align: center;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    width: 750px;
+    height: 890px;
+    position: relative;
+    margin-top: 4vh;
+  }
+  
+.review .luogu .luo img{
+    height:13rem;
+    width:13rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+.review .luogu .luo h3{
+    color:#333;
+    font-size: 2.5rem;
+  }
+  
+.review .luogu .luo p{
+    color:#666;
+    font-size: 1.5rem;
+    padding:2rem 0;
+  }
+.banghewu{
+    position:relative;
+    display: flex;
+    flex-direction: row;
+   flex-wrap: wrap;
+   height: 500px;
+   width: auto;
+   margin-top: 4vh;
+}
+.banghewu .banghe{
+    position: relative;
+    width: 675px;
+    height: 395px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.banghewu .banghe:hover{
+    transform: scale(1.25);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.banghewu .banghe .bangh{
+    position:absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+}
+.banghewu .banghe .bangh::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,rgba(216, 212, 153, 0.945),transparent);
+    z-index: 1;
+    opacity:0;
+    transition: 0.5s;
+}
+.banghewu .banghe:hover .bangh::before{
+    opacity: 1;
+}
+.banghewu .banghe .bangh img{
+    position:absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banghewu .banghe .bang{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding:55px;
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+    z-index: 2;
+}
+.banghewu .banghe .bang h2{
+    font-size: 23px;
+    margin-bottom: 10px;
+    transform: translateY(200px);
+    transition: 0.5s;
+}
+.banghewu .banghe:hover .bang h2{
+    transform: translateY(0);
+    transition-delay: 0.3s;
+}
+.banghewu .banghe .bang p{
+    font-size: 18px;
+    line-height: 20px;
+    transform: translateY(200px);
+    transition: 0.5s;
+}
+.banghewu .banghe:hover .bang p{
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+.zhusuo{
+    position:relative;
+    display: flex;
+    flex-direction: row;
+   flex-wrap: wrap;
+   height: 500px;
+   width: auto;
+   margin-top: 4vh;
+}
+.zhusuo .zhus{
+    position: relative;
+    width: 695px;
+    height: 405px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.zhusuo .zhus:hover{
+    transform: scale(1.25);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.zhusuo .zhus .zhu{
+    position:absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+}
+.zhusuo .zhus .zhu::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,rgba(216, 212, 153, 0.945),transparent);
+    z-index: 1;
+    opacity:0;
+    transition: 0.5s;
+}
+.zhusuo .zhus:hover .zhu::before{
+    opacity: 1;
+}
+.zhusuo .zhus .zhu img{
+    position:absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.zhusuo .zhus .suo{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+    z-index: 2;
+}
+.zhusuo .zhus .suo h2{
+    font-size: 25px;
+    margin-bottom: -15px;
+    transform: translateY(200px);
+    transition: 0.5s;
+}
+.zhusuo .zhus:hover .suo h2{
+    transform: translateY(0);
+    transition-delay: 0.3s;
+}
+.zhusuo .zhus .suo p{
+    font-size: 20px;
+    line-height: 23px;
+    transform: translateY(200px);
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+.zhusuo .zhus:hover .suo p{
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+.heading{
+    text-align: center;
+    padding:2.5rem 0
+  }
+  
+  .heading span{
+    font-size: 3.5rem;
+    background:rgba(255, 165, 0,.2);
+    color:var(--orange);
+    border-radius: .5rem;
+    padding:.2rem 1rem;
+  }
+  
+  .heading span.space{
+    background:none;
+  }
+  
+  .btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background:var(--orange);
+    color:#fff;
+    padding:.8rem 3rem;
+    border:.2rem solid var(--orange);
+    cursor: pointer;
+    font-size: 1.7rem;
+  }
+  
+  .btn:hover{
+    background:rgba(255, 165, 0,.2);
+    color:var(--orange);
+  }
+  
+  header{
+    /* position: fixed; */
+    top:0; left: 0; right:0;
+    background:#333;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem 9%;
+  }
+  
+  header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:#fff;
+    text-transform: uppercase;
+  }
+  
+  header .logo span{
+    color:var(--orange);
+  }
+  
+  header .navbar a{
+    color:#fff;
+    font-size: 2rem;
+    margin:0 .8rem;
+  }
+  
+  header .navbar a:hover{
+    color:var(--orange);
+  }
+  
+  header .icons i{
+    font-size: 2.5rem;
+    color:#fff;
+    cursor: pointer;
+    margin-right: 2rem;
+  }
+  
+  header .icons i:hover{
+    color:var(--orange);
+  }
+  
+  header .search-bar-container{
+    position: absolute;
+    top:100%; left: 0; right:0;
+    padding:1.5rem 2rem;
+    background:#333;
+    border-top: .1rem solid rgba(255,255,255,.2);
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  
+  header .search-bar-container.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  
+  header .search-bar-container #search-bar{
+    width:100%;
+    padding:1rem;
+    text-transform: none;
+    color:#333;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+  }
+  
+  header .search-bar-container label{
+    color:#fff;
+    cursor: pointer;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+  }
+  
+  header .search-bar-container label:hover{
+    color:var(--orange);
+  }
+  .swipe{
+    /* 相对定位 */
+    position: relative;
+    width: 100%;
+    /* 溢出隐藏 */
+    overflow: hidden;
+}
+/* 图片区域 */
+.swipe section{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 2400px;
+    height: 1300px;
+    /* 居中 */
+    margin: 0 auto;
+    padding-top: 2em;
+}
+/* 图片盒子 */
+.swipe .img-box{
+    width: 100%;
+    height: 100%;
+    margin: 5em;
+}
+/* 图片 */
+.swipe .img-box .img{
+    width: 100%;
+    height: 100%;
+    /* 保持原有尺寸比例, 裁切长边 */
+    object-fit: cover;
+}
+/* 指示器 */
+.swipe .select{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    bottom: 20px;
+    text-align: center;
+}
+.swipe .select .item{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 10px;
+    /* 阴影 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+/* 鼠标移入指示器 */
+.swipe .select .item:hover{
+    background-color: #ff4400;
+}
+/* 指示器选中状态 */
+.swipe .select .item.checked{
+    background-color: #ff4400;
+}
+/* 两侧翻页按钮 */
+.swipe .btn{
+    width: 40px;
+    height: 100px;
+    color: #fff;
+    /* 绝对定位 垂直居中 */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    background-color: rgba(0,0,0,0.05);
+    /* 弹性布局 居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    /* 鼠标移入光标变小手 */
+    cursor: pointer;
+    /* 动画过渡 */
+    transition: 0.3s;
+}
+.swipe .btn.left{
+    left: -60px;
+}
+.swipe .btn.right{
+    right: -60px;
+}
+.swipe .btn:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+
+/* 响应式 屏幕尺寸小于1620px时以下代码生效(让两个按钮移动到图片主体内部) */
+@media screen and (max-width:1620px){
+    .swipe .btn.left{
+        left: 20px;
+    }
+    .swipe .btn.right{
+        right: 20px;
+    }
+}
+.jian{
+    background-color: #bc6236;
+}
+.jianzhi{
+    position: relative;
+    padding-top: 16vh;
+    width: 570px;
+    height: 530px;
+    margin: 60px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+.jianzhi .jianz{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 92%;
+    height: 92%;
+    transform-style: preserve-3d;
+    transition: 1s  ease;
+}
+.jianzhi .jianz .jzp1{
+    position:absolute;
+    top: 0;
+    left:20%;
+    width: 92%;
+    height: 92%;
+}
+.jianzhi .jianz .jzp1 img{
+    width: 92%;
+    height: 92%;
+    object-fit:cover;
+}
+.jianzhi .jianz .jzp2{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 92%;
+    height: 92%;
+    background-color: #333;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+.jianzhi .jianz .jzp2 img{
+    width: 92%;
+    height: 92%;
+    object-fit:cover;
+    transform:translateZ(100px);
+}
+.jianzhi:hover .jianz{
+    transform: rotateY(180deg);
+}
+.txtjianzhi{
+    height: 500px;
+}
+.txtjianz{
+    display:flex;
+    flex-direction: row;
+}
+.txtjianz{
+    position:relative;
+    width: 700px;
+    height: 420px;
+    background:rgb(199, 158, 120);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5s;
+    margin:2px 4px 5px 5px;
+}
+.txtjianz .txtjian{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.txtjianz .txtjian::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(231, 221, 222);
+    clip-path: circle(100px at center);
+    transition: 0.5s;
+}
+.txtjianz:hover .txtjian:before{
+    background: rgb(228, 216, 200);
+    clip-path: circle(500px at center);
+}
+.txtjianz img{
+    position: absolute;
+    top: 70%;
+    left: 53%;
+    transform: translate(-50%,-50%);
+    height: 800px;
+    pointer-events: none;
+    transition: 0.8s;
+}
+.txtjianz:hover img{
+    left: 86%;
+    top: 75%;
+    height: 900px;
+}
+.txtjianz .txtji{
+    position:relative;
+    width: 74%;
+    padding: 2px 20px 10px;
+    transition: 1.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.txtjianz:hover .txtji{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.txtjianz .txtji h2{
+    text-transform: uppercase;
+    font-size: 1.7em;
+}
+.txtjianz .txtji p{
+    font-size: 1em;
+    line-height: 1.4em;
+}
+.tongjiangshidiao .tjsd{
+    padding: 30px 30px 30px;
+    text-align: center;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    width: 750px;
+    height: 890px;
+    position: relative;
+    margin-top: 4vh;
+  }
+  
+.tongjiangshidiao .tjsd .tongjiang img{
+    height:13rem;
+    width:13rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+.tongjiangshidiao .tjsd .tongjiang h3{
+    color:#333;
+    font-size: 2.5rem;
+  }
+  
+.tongjiangshidiao .tjsd .tongjiang p{
+    color:#666;
+    font-size: 1.5rem;
+    padding:2rem 0;
+  }
+  .bzsy {
+    width: 800px;
+    margin-bottom: 20px;
+    margin: auto;
+    margin-top: 50px;
+    padding-top: 10px;
+  }
+  .row {
+    position: relative;
+    height: 50px;
+    z-index: 1;
+    clear: both;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .row--intro {
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #fff;
+    opacity: 0.4;
+  }
+  .row--intro span {
+    font-size: 11px;
+  }
+  .skew-title {
+    font-size: 25px;
+    padding-top: 20px;
+  }
+  .skew-title span {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 50px;
+    margin: auto;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    font-family: 'roboto condensed';
+    font-weight: 700;
+    font-size: 35.714285714285715px;
+    line-height: 50px;
+    -webkit-transform: skewY(-15deg);
+            transform: skewY(-15deg);
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+    transition: all 0.2s;
+    cursor: default;
+  }
+  .skew-title span:after,
+  .skew-title span:before {
+    display: block;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    background: #185a81;
+    content: ' ';
+    z-index: -1;
+    transition: all 0.2s;
+  }
+  .skew-title span:before {
+    background: rgba(0,0,0,0.1);
+    -webkit-transform: skewY(15deg);
+            transform: skewY(15deg);
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+  }
+  .skew-title span:nth-child(even) {
+    background-color: #144c6e;
+    -webkit-transform: skewY(15deg);
+            transform: skewY(15deg);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    color: #d9d9d9;
+  }
+  .skew-title span:nth-child(even):after {
+    background-color: #144c6e;
+  }
+  .skew-title span:nth-child(even):before {
+    -webkit-transform-origin: 100% 0;
+            transform-origin: 100% 0;
+    -webkit-transform: skewY(-15deg);
+            transform: skewY(-15deg);
+  }
+  .skew-title span.flat {
+    -webkit-transform: skewY(0);
+            transform: skewY(0);
+    color: #fff;
+  }
+  .skew-title span.flat:before {
+    -webkit-transform: skewY(0);
+            transform: skewY(0);
+  }
+  .skew-title span.flat:nth-child(even):after {
+    background-color: #185a81;
+  }
+
+  
